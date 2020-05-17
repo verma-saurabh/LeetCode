@@ -54,7 +54,7 @@ class Solution {
             map_p[p.charAt(i) - 'a']++;
         }
 
-        for (int i = 0; i < s.length() - p.length(); i++) {
+        for (int i = 0; i < s.length() - p.length()+1; i++) {
             int[] map_s = new int[26];
             for (int j = 0; j < p.length(); j++) {
                 map_s[s.charAt(i+j) - 'a']++;
